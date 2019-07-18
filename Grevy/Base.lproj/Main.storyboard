@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PocketCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Ug-pl-eoX">
+                                <rect key="frame" x="20" y="115" width="374" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnx-NH-Gq3">
+                                <rect key="frame" x="50" y="812" width="314" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg1-Wt-hd7">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bg1-Wt-hd7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="71C-V9-5Av"/>
+                            <constraint firstItem="Hnx-NH-Gq3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8DW-eN-eX1"/>
+                            <constraint firstItem="6Ug-pl-eoX" firstAttribute="top" secondItem="Bg1-Wt-hd7" secondAttribute="bottom" constant="30" id="BQR-yw-I5N"/>
+                            <constraint firstItem="6Ug-pl-eoX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ea5-zb-KVO"/>
+                            <constraint firstItem="Hnx-NH-Gq3" firstAttribute="top" secondItem="6Ug-pl-eoX" secondAttribute="bottom" constant="30" id="YLw-vE-yQQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hnx-NH-Gq3" secondAttribute="bottom" constant="20" id="ee5-ef-Sjr"/>
+                            <constraint firstItem="Hnx-NH-Gq3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fuJ-LK-i8y"/>
+                            <constraint firstItem="Bg1-Wt-hd7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hnW-Gm-Z2G"/>
+                            <constraint firstItem="Bg1-Wt-hd7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jdu-8M-SyN"/>
+                            <constraint firstItem="6Ug-pl-eoX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ws0-FI-7x9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
+        </scene>
+    </scenes>
+</document>
